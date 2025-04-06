@@ -90,7 +90,7 @@
   </Hotel>
 
   <Hotel _Rating="4.3">
-    <Name>JW Marriott Phoenix Desert Ridge Resort & Spa</Name>
+    <Name>JW Marriott Phoenix Desert Ridge Resort &amp; Spa</Name>
     <Phone>480-293-5000</Phone>
     <Phone>480-293-3600</Phone>
     <Address _NearestAirport="Scottsdale Airport (SCF)">
