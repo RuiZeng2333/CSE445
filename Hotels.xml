@@ -82,16 +82,17 @@
        That way, at least one <Address> does NOT have the optional attribute.
   -->
   <Hotel>
-    <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
-    <Phone>602-222-1111</Phone>
-  <Address _NearestAirport="Phoenix Sky Harbor">
+  <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
+  <Phone>602-222-1111</Phone>
+  <!-- FIXED: Add required _NearestAirport -->
+  <Address _NearestAirport="Sky Harbor (PHX)">
     <Number>10</Number>
     <Street>E Thomas Rd</Street>
     <City>Phoenix</City>
     <State>AZ</State>
     <Zip>85012</Zip>
   </Address>
-  </Hotel>
+</Hotel>
 
   <Hotel _Rating="4.3">
     <Name>JW Marriott Phoenix Desert Ridge Resort</Name>
