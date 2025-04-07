@@ -13,7 +13,7 @@
               <!-- The Name element -->
               <xsd:element name="Name" type="xsd:string"/>
               <!-- Phone element: at least one, and multiple allowed -->
-              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <xsd:element name="Phone" type="xsd:string" />
               <!-- Address element with required _NearestAirport attribute -->
               <xsd:element name="Address">
                 <xsd:complexType>
