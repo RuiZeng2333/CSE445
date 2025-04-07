@@ -5,7 +5,7 @@
     <Name>The Westin Phoenix Downtown</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E. 7th St</Street>
       <City>Tempe</City>
@@ -19,7 +19,7 @@
     <Name>Arizona Biltmore, A Waldorf Astoria Resort</Name>
     <Phone>602-955-6600</Phone>
     <Phone>602-381-7632</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>2400</Number>
       <Street>E Missouri Ave</Street>
       <City>Phoenix</City>
@@ -32,7 +32,7 @@
   <Hotel>
     <Name>Found:RE Phoenix</Name>
     <Phone>602-875-9400</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>1100</Number>
       <Street>N Central Ave</Street>
       <City>Phoenix</City>
@@ -46,7 +46,7 @@
     <Name>Royal Palms Resort and Spa</Name>
     <Phone>602-840-3610</Phone>
     <Phone>888-592-1217</Phone>
-    <Address NearstAirport="Phoenix-Mesa Gateway (AZA)">
+    <Address NearstAirport="Phoenix-Mesa Gateway">
       <Number>5200</Number>
       <Street>E Camelback Rd</Street>
       <City>Phoenix</City>
@@ -59,7 +59,7 @@
   <Hotel>
     <Name>Kimpton Hotel Palomar Phoenix Cityscape</Name>
     <Phone>602-253-6633</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>2</Number>
       <Street>E Jefferson St</Street>
       <City>Phoenix</City>
@@ -73,7 +73,7 @@
     <Name>Home2 Suites By Hilton Phoenix Airport North</Name>
     <Phone>602-612-4000</Phone>
     <Phone>602-612-4001</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>2335</Number>
       <Street>E University Dr</Street>
       <City>Phoenix</City>
@@ -86,7 +86,7 @@
   <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
     <Phone>602-222-1111</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>10</Number>
       <Street>E Thomas Rd</Street>
       <City>Phoenix</City>
@@ -100,7 +100,7 @@
     <Name>JW Marriott Phoenix Desert Ridge Resort</Name>
     <Phone>480-293-5000</Phone>
     <Phone>480-293-3600</Phone>
-    <Address NearstAirport="Scottsdale Airport (SCF)">
+    <Address NearstAirport="Scottsdale Airport">
       <Number>5350</Number>
       <Street>E Marriott Dr</Street>
       <City>Phoenix</City>
@@ -113,7 +113,7 @@
   <Hotel>
     <Name>Holiday Inn Express Phoenix Airport</Name>
     <Phone>602-275-6800</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>318</Number>
       <Street>N 44th St</Street>
       <City>Phoenix</City>
@@ -127,7 +127,7 @@
     <Name>The Clarendon Hotel and Spa</Name>
     <Phone>602-252-7363</Phone>
     <Phone>602-252-7373</Phone>
-    <Address NearstAirport="Sky Harbor (PHX)">
+    <Address NearstAirport="Sky Harbor">
       <Number>401</Number>
       <Street>W Clarendon Ave</Street>
       <City>Phoenix</City>
