@@ -15,19 +15,19 @@
               <xsd:element name="Address" minOccurs="1" maxOccurs="1">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <!-- FIXED: Number type to integer -->
+                    <!-- FIX: Number is integer -->
                     <xsd:element name="Number" type="xsd:integer" />
                     <xsd:element name="Street" type="xsd:string" />
                     <xsd:element name="City" type="xsd:string" />
                     <xsd:element name="State" type="xsd:string" />
                     <xsd:element name="Zip" type="xsd:string" />
                   </xsd:sequence>
-                  <!-- FIXED: _NearestAirport is REQUIRED -->
+                  <!-- FIX: _NearestAirport is REQUIRED -->
                   <xsd:attribute name="_NearestAirport" type="xsd:string" use="required" />
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- FIXED: _Rating type to decimal -->
+            <!-- FIX: _Rating is decimal -->
             <xsd:attribute name="_Rating" type="xsd:decimal" use="optional" />
           </xsd:complexType>
         </xsd:element>
