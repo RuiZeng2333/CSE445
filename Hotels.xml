@@ -77,10 +77,14 @@
     </Address>
   </Hotel>
 
+  <!-- 
+       CHANGED THIS ONE: Removed "_NearestAirport" from the Address below.
+       That way, at least one <Address> does NOT have the optional attribute.
+  -->
   <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
     <Phone>602-222-1111</Phone>
-    <Address _NearestAirport="Sky Harbor (PHX)">
+    <Address>
       <Number>10</Number>
       <Street>E Thomas Rd</Street>
       <City>Phoenix</City>
