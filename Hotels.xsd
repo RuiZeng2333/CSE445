@@ -24,7 +24,7 @@
                     <xsd:element name="Zip" type="xsd:int"/>
                   </xsd:sequence>
                   <!-- Mark NearstAirport as required. -->
-                  <xsd:attribute name="NearstAirport" type="xsd:string" use="optional"/>
+                  <xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
