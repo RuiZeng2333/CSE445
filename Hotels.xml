@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Hotels>
+  <!-- 1) Has _Rating -->
   <Hotel _Rating="4.2">
     <Name>The Westin Phoenix Downtown</Name>
     <Phone>480-968-8885</Phone>
@@ -13,7 +14,7 @@
     </Address>
   </Hotel>
 
-  <!-- Phoenix Hotels -->
+  <!-- 2) Has _Rating -->
   <Hotel _Rating="4.5">
     <Name>Arizona Biltmore, A Waldorf Astoria Resort</Name>
     <Phone>602-955-6600</Phone>
@@ -27,6 +28,7 @@
     </Address>
   </Hotel>
 
+  <!-- 3) No _Rating -->
   <Hotel>
     <Name>Found:RE Phoenix</Name>
     <Phone>602-875-9400</Phone>
@@ -39,6 +41,7 @@
     </Address>
   </Hotel>
 
+  <!-- 4) Has _Rating -->
   <Hotel _Rating="4.7">
     <Name>Royal Palms Resort and Spa</Name>
     <Phone>602-840-3610</Phone>
@@ -52,6 +55,7 @@
     </Address>
   </Hotel>
 
+  <!-- 5) No _Rating -->
   <Hotel>
     <Name>Kimpton Hotel Palomar Phoenix Cityscape</Name>
     <Phone>602-253-6633</Phone>
@@ -64,6 +68,7 @@
     </Address>
   </Hotel>
 
+  <!-- 6) Has _Rating -->
   <Hotel _Rating="8.8">
     <Name>Home2 Suites By Hilton Phoenix Airport North</Name>
     <Phone>602-612-4000</Phone>
@@ -77,7 +82,7 @@
     </Address>
   </Hotel>
 
-  <!-- This entry intentionally omits _NearestAirport -->
+  <!-- 7) No _Rating -->
   <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
     <Phone>602-222-1111</Phone>
@@ -90,6 +95,7 @@
     </Address>
   </Hotel>
 
+  <!-- 8) Has _Rating -->
   <Hotel _Rating="4.3">
     <Name>JW Marriott Phoenix Desert Ridge Resort</Name>
     <Phone>480-293-5000</Phone>
@@ -103,6 +109,7 @@
     </Address>
   </Hotel>
 
+  <!-- 9) No _Rating -->
   <Hotel>
     <Name>Holiday Inn Express Phoenix Airport</Name>
     <Phone>602-275-6800</Phone>
@@ -115,6 +122,7 @@
     </Address>
   </Hotel>
 
+  <!-- 10) Has _Rating -->
   <Hotel _Rating="4.6">
     <Name>The Clarendon Hotel and Spa</Name>
     <Phone>602-252-7363</Phone>
