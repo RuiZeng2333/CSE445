@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema id="Hotels"
-    targetNamespace="http://tempuri.org/Hotels.xsd"
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified"
-    xmlns="http://tempuri.org/Hotels.xsd"
-    xmlns:mstns="http://tempuri.org/Hotels.xsd"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
->
+    attributeFormDefault="unqualified">
 
   <xsd:element name="Hotels">
     <xsd:complexType>
