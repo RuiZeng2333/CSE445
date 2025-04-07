@@ -23,7 +23,7 @@
                     <xsd:element name="State" type="xsd:string"/>
                     <xsd:element name="Zip" type="xsd:int"/>
                   </xsd:sequence>
-                  <!-- Mark _NearestAirport as required. -->
+                  <!-- Mark NearstAirport as required. -->
                   <xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
