@@ -24,12 +24,12 @@
                     <xsd:element name="Zip" type="xsd:int"/>
                   </xsd:sequence>
                   <!-- Mark _NearestAirport as required. -->
-                  <xsd:attribute name="_NearestAirport" type="xsd:string" use="required"/>
+                  <xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
             <!-- Mark _Rating as optional. -->
-            <xsd:attribute name="_Rating" type="xsd:string" use="optional"/>
+            <xsd:attribute name="Rating" type="xsd:string" use="optional"/>
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
