@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema 
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    elementFormDefault="qualified" 
+    elementFormDefault="qualified"
     attributeFormDefault="unqualified">
 
   <xsd:element name="Hotels">
@@ -10,25 +10,25 @@
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- The Name element -->
+              <!-- Must appear in order: Name, Phone(s), Address -->
               <xsd:element name="Name" type="xsd:string"/>
-              <!-- Phone element: at least one, and multiple allowed -->
               <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
-              <!-- Address element with required _NearestAirport attribute -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <!-- Numeric fields as integers -->
+                    <!-- Make Number and Zip integers, if required by your instructions. -->
                     <xsd:element name="Number" type="xsd:int"/>
                     <xsd:element name="Street" type="xsd:string"/>
                     <xsd:element name="City" type="xsd:string"/>
                     <xsd:element name="State" type="xsd:string"/>
                     <xsd:element name="Zip" type="xsd:int"/>
                   </xsd:sequence>
+                  <!-- Mark _NearestAirport as required. -->
                   <xsd:attribute name="_NearestAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
+            <!-- Mark _Rating as optional. -->
             <xsd:attribute name="_Rating" type="xsd:string" use="optional"/>
           </xsd:complexType>
         </xsd:element>
