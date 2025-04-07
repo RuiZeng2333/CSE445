@@ -4,40 +4,34 @@
     elementFormDefault="qualified" 
     attributeFormDefault="unqualified">
   
-  <!-- The root element -->
   <xsd:element name="Hotels">
     <xsd:complexType>
       <xsd:sequence>
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- Name -->
               <xsd:element name="Name" type="xsd:string" />
-              
-              <!-- Phone -->
               <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
-              
-              <!-- Address -->
               <xsd:element name="Address" minOccurs="1" maxOccurs="1">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <xsd:element name="Number" type="xsd:string" />
+                    <!-- FIXED: Number type to integer -->
+                    <xsd:element name="Number" type="xsd:integer" />
                     <xsd:element name="Street" type="xsd:string" />
                     <xsd:element name="City" type="xsd:string" />
                     <xsd:element name="State" type="xsd:string" />
                     <xsd:element name="Zip" type="xsd:string" />
                   </xsd:sequence>
-                  <!-- Optional attribute for Address -->
-                  <xsd:attribute name="_NearestAirport" type="xsd:string" use="optional" />
+                  <!-- FIXED: _NearestAirport is REQUIRED -->
+                  <xsd:attribute name="_NearestAirport" type="xsd:string" use="required" />
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- Optional attribute for Hotel -->
-            <xsd:attribute name="_Rating" type="xsd:string" use="optional" />
+            <!-- FIXED: _Rating type to decimal -->
+            <xsd:attribute name="_Rating" type="xsd:decimal" use="optional" />
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-  
 </xsd:schema>
