@@ -84,13 +84,13 @@
   <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
     <Phone>602-222-1111</Phone>
-    <Address>
-      <Number>10</Number>
-      <Street>E Thomas Rd</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85012</Zip>
-    </Address>
+  <Address _NearestAirport="Phoenix Sky Harbor">
+    <Number>10</Number>
+    <Street>E Thomas Rd</Street>
+    <City>Phoenix</City>
+    <State>AZ</State>
+    <Zip>85012</Zip>
+  </Address>
   </Hotel>
 
   <Hotel _Rating="4.3">
