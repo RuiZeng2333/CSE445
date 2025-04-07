@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            elementFormDefault="qualified"
-            attributeFormDefault="unqualified">
+<xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified">
 
   <xsd:element name="Hotels">
     <xsd:complexType>
@@ -9,12 +10,15 @@
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- Hotel elements in the exact order -->
+              <!-- The Name element -->
               <xsd:element name="Name" type="xsd:string"/>
+              <!-- Phone element: at least one, and multiple allowed -->
               <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- Address element with required _NearestAirport attribute -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
+                    <!-- Numeric fields as integers -->
                     <xsd:element name="Number" type="xsd:int"/>
                     <xsd:element name="Street" type="xsd:string"/>
                     <xsd:element name="City" type="xsd:string"/>
@@ -31,4 +35,5 @@
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
+
 </xsd:schema>
