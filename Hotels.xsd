@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    elementFormDefault="qualified" 
-    attributeFormDefault="unqualified">
-  
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+
   <xsd:element name="Hotels">
     <xsd:complexType>
       <xsd:sequence>
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <xsd:element name="Name" type="xsd:string" />
-              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded" />
-              <xsd:element name="Address" minOccurs="1" maxOccurs="1">
+              <!-- Hotel elements in the exact order -->
+              <xsd:element name="Name" type="xsd:string"/>
+              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <!-- FIX: Number is integer -->
-                    <xsd:element name="Number" type="xsd:integer" />
-                    <xsd:element name="Street" type="xsd:string" />
-                    <xsd:element name="City" type="xsd:string" />
-                    <xsd:element name="State" type="xsd:string" />
-                    <xsd:element name="Zip" type="xsd:string" />
+                    <xsd:element name="Number" type="xsd:int"/>
+                    <xsd:element name="Street" type="xsd:string"/>
+                    <xsd:element name="City" type="xsd:string"/>
+                    <xsd:element name="State" type="xsd:string"/>
+                    <xsd:element name="Zip" type="xsd:int"/>
                   </xsd:sequence>
-                  <!-- FIX: _NearestAirport is REQUIRED -->
-                  <xsd:attribute name="_NearestAirport" type="xsd:string" use="required" />
+                  <xsd:attribute name="_NearestAirport" type="xsd:string" use="optional"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- FIX: _Rating is decimal -->
-            <xsd:attribute name="_Rating" type="xsd:decimal" use="optional" />
+            <xsd:attribute name="_Rating" type="xsd:string" use="optional"/>
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
