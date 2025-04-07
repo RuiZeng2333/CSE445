@@ -10,38 +10,30 @@
         <xsd:element name="Hotel" maxOccurs="unbounded">
           <xsd:complexType>
             <xsd:sequence>
-              <!-- Hotel child elements in the required order -->
+              <!-- The Name element -->
               <xsd:element name="Name" type="xsd:string"/>
-              <!-- Use PhoneType instead of xsd:string -->
-              <xsd:element name="Phone" type="PhoneType" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- Phone element: at least one, and multiple allowed -->
+              <xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+              <!-- Address element with required _NearestAirport attribute -->
               <xsd:element name="Address">
                 <xsd:complexType>
                   <xsd:sequence>
-                    <!-- Numeric fields declared as xsd:int -->
+                    <!-- Numeric fields as integers -->
                     <xsd:element name="Number" type="xsd:int"/>
                     <xsd:element name="Street" type="xsd:string"/>
                     <xsd:element name="City" type="xsd:string"/>
                     <xsd:element name="State" type="xsd:string"/>
                     <xsd:element name="Zip" type="xsd:int"/>
                   </xsd:sequence>
-                  <!-- _NearestAirport is required (per the professor's diagram) -->
                   <xsd:attribute name="_NearestAirport" type="xsd:string" use="required"/>
                 </xsd:complexType>
               </xsd:element>
             </xsd:sequence>
-            <!-- _Rating is optional -->
             <xsd:attribute name="_Rating" type="xsd:string" use="optional"/>
           </xsd:complexType>
         </xsd:element>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-
-  <!-- Define the allowed format for the Phone number using a regular expression -->
-  <xsd:simpleType name="PhoneType">
-    <xsd:restriction base="xsd:string">
-      <xsd:pattern value="\d{3}\-\d{3} \d{4}"/>
-    </xsd:restriction>
-  </xsd:simpleType>
 
 </xsd:schema>
