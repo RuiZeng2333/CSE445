@@ -81,7 +81,7 @@
   <Hotel>
     <Name>Embassy Suites by Hilton Phoenix Downtown North</Name>
     <Phone>602-222-1111</Phone>
-    <Address>
+    <Address _NearestAirport="Sky Harbor (PHX)">
       <Number>10</Number>
       <Street>E Thomas Rd</Street>
       <City>Phoenix</City>
